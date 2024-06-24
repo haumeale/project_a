@@ -24,19 +24,47 @@ a{
     color:#FFFFFF;
     text-decoration: none;
 }
+.header_top a {
+    color: #BDBDBD;
+}
 
 .header_top {
     padding: 17px 0 27px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 15px;
+    color: #BDBDBD;
 }
 
 .header_left{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .header_right{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
+
+.header_language-links {
+    position: absolute;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.10);
+    padding: 14px;
+    z-index: 1;
+    background: #FFFFFF;
+    opacity: 0;
+    transition: all 0.3s;
+    visibility: hidden;
+}
+
+.lang-id {
+    text-transform: uppercase;
+}
+
+.social{
+    padding-right: 20px;
+}
+
+
