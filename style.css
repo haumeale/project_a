@@ -1,0 +1,42 @@
+body{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;   
+    color: #FFFFFF;
+}
+
+main{
+    background-image: url(/img/0f4a643504232ee658d475d5aab65606.png);
+    width: 100%;
+    background-size: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 932px;
+}
+
+.container{
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.header_top {
+    padding: 17px 0 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+}
+.header_right{
+    display: flex;
+    align-items: center;
+}
