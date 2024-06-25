@@ -19,7 +19,7 @@ main{
     width: 100%;
 }
 .container {
-    max-width: 1500px;
+    max-width: 1540px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -481,7 +481,7 @@ ul {
 }
 
 .nav{
-    max-width: 1500px;
+    max-width: 1540px;
     margin: 0 auto;
     padding: 0 20px;
 }
