@@ -506,7 +506,7 @@ h1{
 .main_btn{
     font-size: 16px;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 7px;
     background-color: #365EDC;
     color: #FFFFFF;
    border: none;
@@ -623,3 +623,139 @@ margin: 10px;
     padding-left: 40px;
 }
 
+.menu_hidden{
+   z-index: 100;
+   background-image: url(img/изображение\ 1.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   overflow: auto;
+   top: 0;
+   right: 0;
+   left: 0;
+   display: none;
+}
+
+.hidden_one{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden_logo{
+    display: flex;
+    align-items: center;
+}
+
+.hidden_logo-img{
+    display: flex;
+    margin-right: 20px;
+}
+
+.hidden_logo-title{
+    
+    /* font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px; */
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0.9599999785423279px;
+text-align: left;
+
+}
+
+.hidden_number{
+    font-weight: 600;
+    padding-right: 80px;
+    position: relative;
+    transition: all 0.3s;
+    padding-left: 18px;
+}
+
+.hidden_number::before{
+    position: absolute;
+    content: "";
+    background-image: url(img/telephonewhite.svg);
+    background-size: cover;
+    height: 14px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+}
+
+.hidden_two{
+    padding: 20px 0 27px;
+    display: flex;
+    gap: 30px;
+    padding-left: 84px;
+}
+
+.info_one{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase; 
+}
+
+.info_two{
+    line-height: 50px;
+}
+
+
+hr{
+    width: 260px;
+}
+
+.hidden_close {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+   left: 4%;
+   top: 8%;
+    cursor: pointer;
+}
+.hidden_close::before {
+    content: '+';
+    
+    position: absolute;
+    z-index: ;
+    transform: rotate(45deg);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1;
+    top: -5px;
+    left: 6px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.hidden_close::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+.hidden_close::after {
+    transform: scale(1);
+}
+.hidden_close::before {
+    transform: scale(0.8) rotate(45deg);
+    color: #fff;
+}
