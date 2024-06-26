@@ -78,7 +78,7 @@ a{
 .header_language-links {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #FFFFFF;
     width: 60px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -86,6 +86,7 @@ a{
     animation-name: dropdown-fade;
     animation-duration: 0.3s;
     animation-timing-function: ease-out;
+   
 }
 
 .header_language-links a{
@@ -230,7 +231,7 @@ opacity: 0px; */
 @media (max-width: 991.98px) {
     .header_wrapper {
         position: fixed;
-        background: #F9F5F2;
+        background: #FFFFFF;
         margin: 0;
         padding: 20px 0;
         z-index: 3;
@@ -377,15 +378,15 @@ ul {
 
 .header_search-btn {
     margin-left: 30px;
-    display: flex;
+    display: block;
     cursor: pointer;
-    display: inline-block;
+    
 }
 
 .submenu {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #FFFFFF;
     min-width: 290px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -443,9 +444,8 @@ ul {
    margin-right: 10px;
 }
 
-.menu li ul {
-    z-index: 100;
-}
+
+
 /* .menu li ul {
     position: absolute;
     background: #F9F5F2;
@@ -466,7 +466,7 @@ ul {
  align-items: center;
  display: flex;
  position: fixed;
- z-index: ;
+ 
  right: 0;
  left: 0;
  top: 0;
@@ -553,3 +553,73 @@ margin: 10px;
     margin: 15px;
     
 }
+
+.closeModal {
+	position: absolute;
+	top: 60px;
+	right: 50px;
+	width: 28px;
+	height: 28px;
+	opacity: 0.4;
+	cursor: pointer;
+  transition: opacity ease 0.5s;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.closeModal::before,
+.closeModal::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	display: block;
+	width: 28px;
+	height: 3px;
+	background: #000;
+}
+
+.closeModal::before {
+	transform: rotate(45deg);
+}
+
+.closeModal::after {
+	transform: rotate(-45deg);
+}
+
+.modal{
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.322);
+    display: none;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    backdrop-filter: blur(6px);
+    align-items: center;
+}
+
+.modal_content{
+    width: 100%;
+    height: 150px;
+    background-color: #FFFFFF;
+    z-index: 101;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    
+}
+
+
+.search_input{
+    border: none; 
+    font-size: 32px;
+    position: relative;
+    padding-left: 40px;
+}
+
