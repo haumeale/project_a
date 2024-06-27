@@ -1,8 +1,13 @@
 const openBtn = document.getElementById('header_search-btn')
 const modal = document.getElementById('modal')
 const closeBtn = document.getElementById('closeModal')
+const openHiddenSearch = document.getElementById('menu_search')
 
 openBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+})
+
+openHiddenSearch.addEventListener('click', () => {
     modal.style.display = 'block';
 })
 
