@@ -20,10 +20,20 @@ html, body {
 }
 
 main{
-    /* background-image: url(img/изображение\ 1.png);
+    /* font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;   
+    color: #FFFFFF;
+    position: relative;
+    background: url(img/изображение\ 1.png) ;
     background-repeat: no-repeat;
-    background-size: cover; */
-    /* background-position: center; */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0; */
     
 
 }
@@ -40,6 +50,8 @@ main{
 section{
     padding: 40px;
     padding-bottom: 70px;
+  
+    
 }
 
 
@@ -562,7 +574,9 @@ h1{
         z-index: 5;
         right: 0;
         bottom: 36%;
-        border-radius: 3px;
+        /* border-radius: 3px; */
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     
 }
@@ -927,10 +941,18 @@ svg:hover{
 .main_slider{
     display: flex;
     justify-content: space-between; 
-    gap: 20px;
+    gap: 30px;
+    
 }
 .slider_one{
-    
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    height: 220.25px;
+    max-width: 734px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .section_two{
@@ -980,8 +1002,8 @@ h2 {
 }
 
 .card_news{
-    width: 351px;
-height: 406px;
+    width: 349px;
+height: max-content;
 top: 1391px;
 left: 210px;
 gap: 0px;
@@ -1027,6 +1049,7 @@ opacity: 0px;
     gap: 30px;
     align-items: center;
     max-width: 1540px;
+    justify-content: space-between;
 }
 
 section:nth-child(2n){
@@ -1052,7 +1075,7 @@ section a {
 }
 
 .citizens hr{
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 .citizens ul{
@@ -1146,4 +1169,45 @@ section a {
    
 }
 
+.card_event{
+    width: 349px;
+    height: max-content;
+}
+
+.card_event-text p{
+    font-size: 16px;
+    font-family: Roboto;
+    
+}
+
+.card_event-text {
+    padding-top: 20px;
+}
+
+.card_event-text small{
+    color: #999999;
+}
+
+.card_services{
+    display: flex;
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+}
+
+.services_detail{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 40px;
+}
+
+.services{
+    display: flex;
+    gap: 30px;
+}
+
+.services_text{
+    /* width: 401px; */
+}
 
