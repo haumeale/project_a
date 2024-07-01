@@ -1205,9 +1205,12 @@ section a {
 .services{
     display: flex;
     gap: 30px;
+   flex-wrap: wrap;
+   flex-direction: column;
+   columns: 2;
 }
 
-.services_text{
-    /* width: 401px; */
+.card_one{
+    display: flex;
+    gap: 30px;
 }
-
