@@ -1037,6 +1037,11 @@ opacity: 0px;
     background-color:#FAFAFA;
     border-radius: 4px;
     font-size: 12px;
+    transition: all 0.3s;
+}
+
+.type_new:hover{
+    background-color: #EFEFEF;
 }
 
 .cadr_news-text p{
