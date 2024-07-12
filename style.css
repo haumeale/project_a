@@ -1194,10 +1194,16 @@ section a {
 }
 
 .card_services{
-    display: flex;
+    /* display: flex; */
     width: 100%;
     border: 1px solid #E5E5E5;
     border-radius: 5px;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+
+.card_services:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .services_detail{
@@ -1208,7 +1214,7 @@ section a {
 }
 
 .services{
-    display: flex;
+    /* display: flex; */
     gap: 30px;
    flex-wrap: wrap;
    flex-direction: column;
