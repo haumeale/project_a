@@ -1225,3 +1225,34 @@ section a {
     display: flex;
     gap: 30px;
 }
+
+.numder_line{
+   font-size: 24px; 
+   font-weight: 700;
+   color: #365EDC;
+   font-family: Roboto;
+}
+
+.phone_main{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.card_resours{
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+}
+
+.detail_resours{
+    align-items: center;
+}
+
+.info_resours{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
