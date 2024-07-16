@@ -15,6 +15,12 @@ closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
 })
 
+window.addEventListener('click', (event) => {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+    })
+
 const hiddenOpen = document.getElementById('menu_burger')
 const hiddenMenu = document.getElementById('menu_hidden')
 const hiddenClose = document.getElementById('hidden_close')
