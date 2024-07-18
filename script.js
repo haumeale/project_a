@@ -89,3 +89,7 @@ prevBtn.addEventListener('click', prevSlide);
 indicators.forEach((indicator, i) => {
     indicator.addEventListener('click', () => showSlide(i));
 });
+
+
+//////
+
