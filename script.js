@@ -40,6 +40,7 @@ const slides = document.querySelectorAll('.slide');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 
+
 let currentSlide = 0;
 
 function showSlide(n) {
