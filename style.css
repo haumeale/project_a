@@ -424,11 +424,10 @@ main a:hover{
     z-index: 10;
     padding: 10px;
     border-radius: 7px;
-    animation-name: dropdown-fade;
+    animation-name: dropdown-fade-out;
     animation-duration: 0.3s;
     animation-timing-function: ease-out;
    line-height: 20px; 
-    transition: all 0.3s;
 }
 
 .menu li:hover .submenu {
