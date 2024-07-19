@@ -1233,6 +1233,15 @@ footer small{
     color: #999999;
 }
 
+footer a {
+    transition: all 0.3s;
+    
+}
+
+footer a:hover{
+   
+}
+
 .svg_block{
     display: flex;
     align-items: center;
@@ -1504,3 +1513,6 @@ footer small{
     padding: 0;
     z-index: 1;
   }
+
+  /* /////// carousel */
+  
