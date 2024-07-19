@@ -416,7 +416,9 @@ main a:hover{
 }
 
 .submenu {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     background-color: #FFFFFF;
     min-width: 290px;
@@ -431,7 +433,9 @@ main a:hover{
 }
 
 .menu li:hover .submenu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    /* display: block; */
     animation-name: dropdown-fade-in;
   }
 
@@ -1502,6 +1506,8 @@ footer a:hover{
     text-align: center;
     opacity: 0.5;
     transition: opacity 0.5s;
+    position: relative;
+    overflow: hidden;
   }
 
   .news_prew{
