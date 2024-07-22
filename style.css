@@ -107,6 +107,7 @@ header {
     animation-name: dropdown-fade;
     animation-duration: 0.3s;
     animation-timing-function: ease-out;
+    opacity: 0;
    
 }
 
@@ -115,6 +116,7 @@ header {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    opacity: 1;
 }
 
 .header_language-links a:hover {background-color: #ddd;}
@@ -257,11 +259,111 @@ header {
         background: #FFFFFF;
         margin: 0;
         padding: 20px 0;
-        z-index: 3;
         width: 100%;
         right: 0;
         top: 0;
         border-radius: 0;
+        z-index: 8;
+    }
+
+    .header_left{
+        padding-left: 20px;
+       margin: 0 auto;
+       gap: 0;
+    }
+
+    .menu {
+       opacity: 0;
+       visibility: hidden;
+    }
+
+    .header_search-btn{
+        padding-right: 50px;
+        z-index: 8;
+        position: fixed;
+        right: 0;
+    }
+
+    .modal_left{
+        display: flex;
+        margin: 30px;
+    }
+    
+    .header_top{
+        visibility: hidden;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    .main{
+        padding-top: -60px;
+    }
+
+    .slide-content{
+        
+    }
+
+    .navigation {
+     max-width: fit-content;
+    bottom: 20%;
+    right: 45%;
+    }
+
+    .navigation button{
+        background-color: #fff;
+    }
+
+    .message{
+        visibility: hidden;
+    }
+
+    .indicator {
+        visibility: hidden;
+    }
+
+    main {
+        width: 100%;
+        max-height: 660px;
+        
+    }
+
+    .main_slider{
+        flex-wrap: wrap;
+    }
+
+    .slide_one{
+        gap: 0;
+        max-width: fit-content;
+
+    }
+
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .citizens{
+        flex-wrap: wrap;
+    }
+
+    .footer_list{
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+
+    .hidden-text{
+        display: none;
+    }
+
+    .info_footer{
+        flex-wrap: wrap;
+    }
+
+    .info_footer-one{
+        flex-wrap: wrap;
+        gap: 5px;
     }
 }
 
@@ -426,10 +528,11 @@ main a:hover{
     z-index: 10;
     padding: 10px;
     border-radius: 7px;
-    animation-name: dropdown-fade-out;
+    /animation-name: dropdown-fade-out;
     animation-duration: 0.3s;
     animation-timing-function: ease-out;
    line-height: 20px; 
+   
 }
 
 .menu li:hover .submenu {
@@ -530,6 +633,7 @@ h1{
    cursor: pointer;
    margin-top: 30px;
    transition: all 0.4s;
+   
 }
 
 .main_btn:hover{
@@ -629,7 +733,7 @@ margin: 10px;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
+    /* padding-left: 100px; */
     
 }
 
@@ -656,8 +760,17 @@ margin: 10px;
    display: none;
 }
 
+.hidden_left{
+    display: flex;
+    align-items: center;
+}
+
+.hidden_right{
+    align-items: center;
+}
+
 .hidden_one{
-    
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -704,7 +817,7 @@ text-align: left;
 }
 
 .hidden_two{
-    padding: 20px 0 27px;
+    padding: 50px 0 27px;
     display: flex;
     gap: 30px;
     padding-left: 84px;
@@ -733,8 +846,9 @@ text-align: left;
     border-radius: 40px;
     position: relative;
     z-index: 1;
-   left: 4%;
-   top: 8%;
+   /* left: 4%;
+   top: 8%; */
+   padding-right: 40px;
     cursor: pointer;
 }
 .hidden_close::before {
@@ -1107,6 +1221,7 @@ section a {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    overflow: hidden;
 }
 
 .info_message p {
@@ -1349,8 +1464,10 @@ footer a:hover{
   
   .navigation {
     position: absolute;
-    bottom: 45%;
-    left: 50%;
+    /* bottom: 45%;
+    left: 50%; */
+    margin-top: 175px;
+    margin-left: 760px;
     transform: translateX(-50%);
     display: flex;
     width: 90%;
@@ -1419,6 +1536,7 @@ footer a:hover{
   .slide:nth-child(2) {
     background-image: url('/изображение\ 1.png');
   }
+
 
   .indicators {
     position: absolute;
@@ -1519,5 +1637,14 @@ footer a:hover{
     z-index: 1;
   }
 
-  /* /////// carousel */
+  /* /////// mobile media*/
+  @media (max-width:604px){
+    h1{
+        font-size: 44px;
+    }
+
+    .navigation{
+        right: 25%;
+    }
+  }
   
