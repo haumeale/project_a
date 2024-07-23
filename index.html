@@ -289,7 +289,13 @@
 
     </div>
 
-    <div class="menu_hidden" id="menu_hidden">
+    <!-- hidden menu mobile -->
+
+     
+
+    
+    
+     <div class="menu_hidden" id="menu_hidden">
         
         <div class="container">
             <div class="hidden_one">
@@ -1571,6 +1577,11 @@ window.addEventListener('click', (event) => {
 const hiddenOpen = document.getElementById('menu_burger')
 const hiddenMenu = document.getElementById('menu_hidden')
 const hiddenClose = document.getElementById('hidden_close')
+const openMobilMenu = document.getElementById('menu_mobile')
+
+hiddenOpen.addEventListener('click', () => {
+    openMobilMenu.style.display = 'block';
+})
 
 hiddenOpen.addEventListener('click', () => {
     hiddenMenu.style.display = 'block';
