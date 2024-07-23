@@ -369,6 +369,10 @@ header {
     .menu_hidden{
         display: none;
     }
+
+    .menu_mobile{
+        display: block;
+    }
 }
 
 
@@ -766,7 +770,7 @@ margin: 10px;
    top: 0;
    right: 0;
    left: 0;
-   display: none;
+   
 }
 
 .hidden_left{
@@ -1648,7 +1652,7 @@ footer a:hover{
 
   .menu_mobile{
     display: none;
-    z-index: 109;
+    z-index: 10;
     color: #000;
     width: 100%;
     height: 100%;
@@ -1663,6 +1667,147 @@ footer a:hover{
   .menu_mobile a {
     color: #000;
   }
+
+  .hidden_close-m {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+   /* left: 4%;
+   top: 8%; */
+    cursor: pointer;
+}
+.hidden_close-m::before {
+    content: '+';
+    
+    position: absolute;
+    z-index: ;
+    transform: rotate(45deg);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1;
+    top: -5px;
+    left: 6px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.hidden_close-m::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+.hidden_close-m::after {
+    transform: scale(1);
+}
+.hidden_close-m::before {
+    transform: scale(0.8) rotate(45deg);
+    color: #333333;
+    opacity: 0.5;
+}
+
+.header_wrapper-m{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    font-weight: 700;
+    
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 19px;
+    padding: 15px;
+}
+
+.header_logo-m{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list_mobile ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+
+
+}
+
+.header_right-m{
+    line-height: 60px;
+    color: #BDBDBD;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+.header_right-m a{
+    color: #BDBDBD;
+}
+
+.list_mobile ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.list_mobile{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+
+.list_mobile li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.svg_list-mobile{
+    padding: 0 10px 0 10px;
+    
+}
+
+.main_btn-m{
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #365EDC;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 20px;
+}
+
+.main_btn-m:hover{
+    background:  #2b4aaf;
+    color: #fff;
+}
+
+.list_hidden li{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 28px;
+    text-transform: none;
+    color: #333333;
+}
+
+.list_hidden{
+    display: none;
+    padding: 15px 0 15px 0;
+}
+
+
+  
   
   /* /////// mobile media*/
   @media (max-width:604px){
