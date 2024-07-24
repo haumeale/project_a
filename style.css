@@ -1843,12 +1843,17 @@ footer a:hover{
   /* /////// mobile media*/
   @media (max-width:604px){
     h1{
-        font-size: 44px;
+        font-size: 40px;
+        line-height: 20px;
+    }
+
+    .container{
+        padding: 0 10px;
     }
 
     .navigation{
         right: 10%;
-        bottom: 15%;
+        bottom: 18%;
     }
 
     .modal_left img{
