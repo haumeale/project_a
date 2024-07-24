@@ -459,8 +459,8 @@
               <div class="list_mobile">
                   <ul>
                     <div>
-                      <li><a href="">О районе</a>
-                        <div class="svg_list-mobile" id="svg_list-mobile"><svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <li id="svg_list-mobile"><a href="">О районе</a>
+                        <div class="svg_list-mobile" ><svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g clip-path="url(#clip0_255_3498)">
                           <path d="M0.0180664 1.44844L0.0180664 5.54553C0.0180664 5.94716 0.467669 6.18488 0.799587 5.95874L3.79793 3.91599C4.08877 3.71784 4.08933 3.28922 3.79901 3.0903L0.800675 1.03596C0.46886 0.808624 0.0180664 1.04621 0.0180664 1.44844Z" fill="#333333"/>
                           </g>
@@ -614,6 +614,7 @@
                     <div>
                     <a href="">
                         <img src="img/banner1.png" alt="">
+                        
                     </a>
                     </div>
 
@@ -623,7 +624,7 @@
 
                 </div>
 
-                <div class="slider_one">
+                <div class="slider_two">
                     <div>
                     <a href="">
                         <img src="img/banner2.png" alt="" >
@@ -1758,7 +1759,7 @@ const closeListHidden = document.getElementById('hidden_close-m')
 const mobileMenu = document.getElementById('menu_mobile')
 
 closeListHidden.addEventListener('click', () => {
-    mobileMenu.style.display = 'none';
+    hiddenMenu.style.display = 'none';
 })
 
 openListHidden.addEventListener('click', () => {
@@ -1772,7 +1773,7 @@ openListHidden.addEventListener('click', () => {
 const hiddenOpen = document.getElementById('menu_burger')
 const hiddenMenu = document.getElementById('menu_hidden')
 const hiddenClose = document.getElementById('hidden_close')
-const openMobilMenu = document.getElementById('menu_mobile')
+// const openMobilMenu = document.getElementById('menu_mobile')
 
 hiddenOpen.addEventListener('click', () => {
     openMobilMenu.style.display = 'block';
