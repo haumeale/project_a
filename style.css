@@ -1880,6 +1880,18 @@ footer a:hover{
         padding-left: 20px;
     }
 
+    .header_search-btn{
+        padding-right: 20px;
+    }
+
+    .menu_burger{
+        margin-right: 10px;
+    }
+
+    .header_logo-img{
+        margin-right: 10px;
+    }
+
     .closeModal::before,
 .closeModal::after {
 	content: '';
