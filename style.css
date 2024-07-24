@@ -696,7 +696,7 @@ margin: 10px;
 }
 
 .closeModal {
-	position: absolute;
+	position: sticky;
 	top: 60px;
 	right: 50px;
 	width: 28px;
@@ -1857,7 +1857,7 @@ footer a:hover{
 	position: absolute;
 	top: 10px;
 	display: block;
-	width: 22px;
+	width: 20px;
 	height: 3px;
 	background: #000;
 }
