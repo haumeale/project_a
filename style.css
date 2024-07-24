@@ -1840,6 +1840,32 @@ footer a:hover{
     .navigation{
         right: 25%;
     }
+
+    .modal_left img{
+        width: 23px;
+        
+    }
+
+    .search_input{
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    .closeModal::before,
+.closeModal::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	display: block;
+	width: 22px;
+	height: 3px;
+	background: #000;
+}
+
+.closeModal{
+    right: 0;
+    margin-right: 10px;
+}
   }
   
 /* media 1024 */
