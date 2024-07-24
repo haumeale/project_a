@@ -323,7 +323,7 @@ header {
     }
 
     .navigation button{
-        background-color: #fff;
+        background-color: rgb(255, 255, 255);
     }
 
     .message{
@@ -1925,10 +1925,11 @@ h2{
 .info_footer-one{
     gap: 0;
     flex-wrap: wrap;
+    display: block;
 }
 
 footer{
-    padding: 0 0 50px 0 ;
+    padding: 5px 5px 30px 5px ;
 }
 
 .footer_small-text{
