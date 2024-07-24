@@ -374,7 +374,8 @@ header {
 
     .info_footer-one{
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 0;
+        
     }
 
     .menu_hidden{
@@ -1828,6 +1829,14 @@ footer a:hover{
     padding: 15px 0 15px 0;
 }
 
+.footer_small-text{
+    padding-bottom: 70px;
+}
+
+.footer_small-text p{
+    width: 50%;
+}
+
 
   
   
@@ -1879,6 +1888,23 @@ section{
 h2{
     font-size: 32px;
     line-height: 40px;
+}
+
+.info_footer-one{
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+footer{
+    padding: 0 0 50px 0 ;
+}
+
+.footer_small-text{
+    padding-bottom: 20px;
+}
+
+.footer_small-text p{
+    width: 100%;
 }
   }
   
