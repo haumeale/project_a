@@ -1847,7 +1847,8 @@ footer a:hover{
     }
 
     .navigation{
-        right: 25%;
+        right: 10%;
+        bottom: 15%;
     }
 
     .modal_left img{
@@ -1882,7 +1883,7 @@ footer a:hover{
 }
 
 section{
-    padding: 0 0 50px 0 ;
+    padding: 5px 5px 50px 5px ;
 }
 
 h2{
@@ -1913,8 +1914,8 @@ footer{
   @media (max-width:1024px){
     .navigation{
         max-width: fit-content;
-    bottom: 21%;
-    right: 53%;
+    /* bottom: 21%;
+    right: 53%; */
     }
 
     main{
@@ -1922,7 +1923,7 @@ footer{
     }
 
     h1{
-        font-size: 70px;
+        /* font-size: 70px; */
     }
 
     .main_slider{
