@@ -1928,6 +1928,10 @@ h2{
     display: block;
 }
 
+.footer_span{
+    display: none;
+}
+
 footer{
     padding: 5px 5px 30px 5px ;
 }
@@ -1948,6 +1952,10 @@ footer{
     display: block;
     gap: 10px;
     padding: 30px;
+}
+
+.info_footer{
+    display: block;
 }
   }
   
