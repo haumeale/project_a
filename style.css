@@ -1568,6 +1568,16 @@ footer a:hover{
     background-image: url('/изображение\ 1.png');
   }
 
+  @media (max-width:604px){
+    .slide:nth-child(1) {
+        background-image: url('/img/slidesmall.png');
+      }
+      
+      .slide:nth-child(2) {
+        background-image: url('img/slidesmall.png');
+      }
+  }
+
 
   .indicators {
     position: absolute;
