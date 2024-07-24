@@ -1847,6 +1847,10 @@ footer a:hover{
         line-height: 20px;
     }
 
+    body{
+        overflow-x: hidden;
+    }
+
     .container{
         padding: 0 10px;
     }
