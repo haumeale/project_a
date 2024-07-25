@@ -1252,7 +1252,7 @@ section a {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    overflow: hidden;
+    /* overflow-x: hidden; */
 }
 
 .info_message p {
