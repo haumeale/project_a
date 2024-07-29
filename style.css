@@ -6,6 +6,7 @@ body{
     color: #FFFFFF;
     position: relative;
     margin: 0;
+    overflow-x: hidden;
 }
 
 html, body {
