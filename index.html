@@ -467,7 +467,7 @@
                           </div>
                         </div>
       
-                          <ul class="list_hidden" id="list_hidden">
+                          <ul class="list_hidden" id="list_hidden" style="display: none;">
                             <li><a href="">Общая информация</a></li>
                             <li> <a href="">История</a></li>
                             <li><a href="">Туризм и отдых</a></li>
@@ -1755,6 +1755,14 @@ const mobileMenu = document.getElementById('menu_mobile')
 closeListHidden.addEventListener('click', () => {
     hiddenMenu.style.display = 'none';
 })
+
+// openListHidden.addEventListener('click', () => {
+//     listHidden.style.display = 'block';
+//     if(listHidden.style.display === 'block'){
+//         listHidden.style.display = 'none';
+//     }
+// })
+
 
 openListHidden.addEventListener('click', () => {
     if (listHidden.style.display === 'none') {
