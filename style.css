@@ -1897,8 +1897,12 @@ footer a:hover{
     }
 
     .navigation{
-        right: 10%;
-        bottom: 18%;
+        right: 0%;
+        bottom: 16%;
+    }
+
+    .prev-btn{
+        
     }
 
     .modal_left img{
