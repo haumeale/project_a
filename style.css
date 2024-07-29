@@ -1568,15 +1568,6 @@ footer a:hover{
     background-image: url('/изображение\ 1.png');
   }
 
-  @media (max-width:604px){
-    .slide:nth-child(1) {
-        background-image: url('/img/slidesmall.png');
-      }
-      
-      .slide:nth-child(2) {
-        background-image: url('img/slidesmall.png');
-      }
-  }
 
 
   .indicators {
@@ -1894,6 +1885,8 @@ footer a:hover{
 
     .container{
         padding: 0 10px;
+        max-width: 1540px;
+    margin: 0 auto;
     }
 
     .navigation{
