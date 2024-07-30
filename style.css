@@ -1815,6 +1815,11 @@ footer a:hover{
     font-size: 16px;
 }
 
+.detail_phone p{
+    overflow-x: hidden;
+    white-space: normal;
+}
+
 .slider_section:hover .prev-btn-s{
     visibility: visible;
 }
