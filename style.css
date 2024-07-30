@@ -1715,12 +1715,13 @@ footer a:hover{
   
   .carousel-item {
     display: inline-block;
-    width: max-content;
-    height: 100%;
-    font-size: 24px;
-    padding: 15px;
-    box-sizing: border-box;
-    vertical-align: top;
+width: max-content;
+height: 100%;
+font-size: 24px;
+/*padding: 15px;*/
+box-sizing: border-box;
+vertical-align: top;
+padding-right: 30px;
   }
   
   .prev-btn-s, .next-btn-s {
@@ -1923,9 +1924,10 @@ footer a:hover{
     width: max-content;
     height: 100%;
     font-size: 24px;
-    padding: 15px;
+    /*padding: 15px;*/
     box-sizing: border-box;
     vertical-align: top;
+    padding-right: 30px;
   }
   
 
@@ -2240,6 +2242,18 @@ footer a:hover{
 
     }
 
+    .carousel-container{
+        height: 300px;
+    }
+
+    .carousel-container-r{
+        height: 200px;
+    }
+
+    .new_title{
+        padding-bottom: 0;
+    }
+
     .main_btn{
         padding: 13px;
         font-size: 13px;
@@ -2254,6 +2268,7 @@ footer a:hover{
     .slider_one img{
         opacity: 0;
     }
+
 
     .slider_one{
         background-image: url(img/Group\ 65.svg);
