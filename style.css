@@ -1097,6 +1097,7 @@ section a {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    margin-bottom: 18px;
     /* overflow-x: hidden; */
 }
 
