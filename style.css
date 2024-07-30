@@ -1734,6 +1734,7 @@ footer a:hover{
     border-radius: 4px;
     visibility: hidden;
     transition: all 0.3s;
+    border: 1px solid #3333331A;
   }
   
   .prev-btn-s {
