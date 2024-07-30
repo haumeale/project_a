@@ -1702,7 +1702,7 @@ footer a:hover{
     overflow-x: hidden;
     white-space: nowrap;
     touch-action: pan-y;
-    background-color: #F4F4F4;
+    /* background-color: #F4F4F4; */
   }
   
   .carousel {
