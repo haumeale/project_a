@@ -1980,6 +1980,11 @@ footer a:hover{
 
     }
 
+    .main_btn{
+        padding: 15px;
+        font-size: 14px;
+    }
+
     .slider_two{
         background-image: url(img/Group\ 66.svg);
         background-repeat: no-repeat;
