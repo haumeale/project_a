@@ -107,7 +107,7 @@ header {
     animation-name: dropdown-fade;
     animation-duration: 0.3s;
     animation-timing-function: ease-out;
-    z-index: 3;
+    z-index: 20;
    
 }
 
@@ -1097,7 +1097,7 @@ section a {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .info_message p {
@@ -1717,9 +1717,33 @@ footer a:hover{
     }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1289.98px) {
     .header_wrapper {
         margin: 20px 0;
+    }
+
+    .navigation{
+        max-width: fit-content;
+    bottom: 27%;
+    right: 57%; 
+    }
+
+    .navigation button{
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navigation path {
+        stroke: black;
+        transition: all 0.3s;
+    }
+
+    .navigation button:hover{
+        background-color: #fff;
+
+    }
+
+    .navigation button:hover path{
+        stroke: #365EDC;
     }
 }
 
