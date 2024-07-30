@@ -2063,12 +2063,28 @@ footer a:hover{
         z-index: 8;
     }
 
+    .prev-btn-s, .next-btn-s{
+        visibility: visible;
+    }
+
+    .prev-btn-r, .next-btn-r{
+        visibility: visible;
+    }
+
+    .carousel-indicators-r{
+        visibility: visible;
+    }
+
+    .carousel-indicators-s{
+        visibility: visible;
+    }
+
     .indicator-s{
-        opacity: 0;
+       display: none;
     }
 
     .indicator-r{
-        opacity: 0;
+       display: none;
     }
 
     
