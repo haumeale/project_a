@@ -1338,7 +1338,7 @@ footer a:hover{
   
   .slide-content {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 51%;
     transform: translate(-50%, -50%);
     color: white;
@@ -1352,7 +1352,7 @@ footer a:hover{
     position: absolute;
     /* bottom: 45%;
     left: 50%; */
-    margin-top: 175px;
+    margin-top: 195px;
     margin-left: 760px;
     transform: translateX(-50%);
     display: flex;
@@ -2119,7 +2119,7 @@ padding-right: 30px;
 
 @media (max-width: 1550px) {
     .header_logo-title {
-        width: 260px;
+        width: 200px;
         font-size: 16px;
     }
 }
@@ -2135,9 +2135,13 @@ padding-right: 30px;
         margin: 20px 0;
     }
 
+    .menu a {
+        font-size: 11px;
+    }
+
     .navigation{
         max-width: fit-content;
-    bottom: 27%;
+    bottom: 21%;
     right: 57%; 
     }
 
@@ -2163,7 +2167,7 @@ padding-right: 30px;
 @media (max-width:1024px){
     .navigation{
         max-width: fit-content;
-    bottom: 23%;
+    bottom: 18%;
     right: 53%; 
     }
 
@@ -2219,20 +2223,25 @@ padding-right: 30px;
     .navigation button:hover path{
         stroke: #365EDC;
     }
+    .prev-btn-i, .next-btn-i{
+        visibility: visible;
+    }
 
   }
 
 @media (max-width: 991.99px){
 
-    .prev-btn-i, .next-btn-i{
-        visibility: visible;
-    }
+    
     .menu_hidden{
         display: block;
     }
 
     .menu_mobile{
         display: none;
+    }
+
+    .slide-content{
+        top: 50%;
     }
 
 }
@@ -2284,7 +2293,7 @@ padding-right: 30px;
 
     .header_left{
         padding-left: 20px;
-       margin: 0 auto;
+       /* margin: 0 auto; */
        gap: 0;
     }
 
