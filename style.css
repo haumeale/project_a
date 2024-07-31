@@ -604,6 +604,7 @@ margin: 10px;
 
 .modal_left{
     margin: 25px;
+    overflow: hidden;
 }
 
 
