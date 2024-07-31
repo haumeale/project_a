@@ -2101,26 +2101,26 @@ carousel.addEventListener('mouseleave', () => {
   updateIndicators();
 });
 
-carousel.addEventListener('touchstart', (e) => {
-  isMouseDown = true;
-  startX = e.touches[0].clientX - carousel.offsetLeft;
-  scrollLeft = carousel.scrollLeft;
-});
+// carousel.addEventListener('touchstart', (e) => {
+//   isMouseDown = true;
+//   startX = e.touches[0].clientX - carousel.offsetLeft;
+//   scrollLeft = carousel.scrollLeft;
+// });
 
-carousel.addEventListener('touchmove', (e) => {
-  if (!isMouseDown) return;
-  e.preventDefault();
-  const x = e.touches[0].clientX - carousel.offsetLeft;
-  const walk = (x - startX) * 1.5;
-  carousel.scrollLeft = scrollLeft - walk;
-});
+// carousel.addEventListener('touchmove', (e) => {
+//   if (!isMouseDown) return;
+//   e.preventDefault();
+//   const x = e.touches[0].clientX - carousel.offsetLeft;
+//   const walk = (x - startX) * 1.5;
+//   carousel.scrollLeft = scrollLeft - walk;
+// });
 
-carousel.addEventListener('touchend', () => {
-  isMouseDown = false;
-  currentIndex = Math.round(carousel.scrollLeft / carouselItems[0].offsetWidth);
-  moveSlideToStart(currentIndex);
-  updateIndicators();
-});
+// carousel.addEventListener('touchend', () => {
+//   isMouseDown = false;
+//   currentIndex = Math.round(carousel.scrollLeft / carouselItems[0].offsetWidth);
+//   moveSlideToStart(currentIndex);
+//   updateIndicators();
+// });
 
 ///setInterval(() => {
  /// currentIndex = (currentIndex + 1) % carouselItems.length;
@@ -2208,26 +2208,26 @@ carouselR.addEventListener('mouseleave', () => {
   updateIndicatorsR();
 });
 
-carouselR.addEventListener('touchstart', (e) => {
-  isMouseDown = true;
-  startX = e.touches[0].clientX - carouselR.offsetLeft;
-  scrollLeft = carouselR.scrollLeft;
-});
+// carouselR.addEventListener('touchstart', (e) => {
+//   isMouseDown = true;
+//   startX = e.touches[0].clientX - carouselR.offsetLeft;
+//   scrollLeft = carouselR.scrollLeft;
+// });
 
-carouselR.addEventListener('touchmove', (e) => {
-  if (!isMouseDown) return;
-  e.preventDefault();
-  const x = e.touches[0].clientX - carouselR.offsetLeft;
-  const walk = (x - startX) * 1.5;
-  carouselR.scrollLeft = scrollLeft - walk;
-});
+// carouselR.addEventListener('touchmove', (e) => {
+//   if (!isMouseDown) return;
+//   e.preventDefault();
+//   const x = e.touches[0].clientX - carouselR.offsetLeft;
+//   const walk = (x - startX) * 1.5;
+//   carouselR.scrollLeft = scrollLeft - walk;
+// });
 
-carouselR.addEventListener('touchend', () => {
-  isMouseDown = false;
-  currentIndex = Math.round(carouselR.scrollLeft / carouselItems[0].offsetWidth);
-  moveSlideToStartR(currentIndex);
-  updateIndicatorsR();
-});
+// carouselR.addEventListener('touchend', () => {
+//   isMouseDown = false;
+//   currentIndex = Math.round(carouselR.scrollLeft / carouselItems[0].offsetWidth);
+//   moveSlideToStartR(currentIndex);
+//   updateIndicatorsR();
+// });
 
 /////
 
@@ -2286,26 +2286,26 @@ carouselN.addEventListener('mouseleave', () => {
  
 });
 
-carouselN.addEventListener('touchstart', (e) => {
-  isMouseDown = true;
-  startX = e.touches[0].clientX - carouselN.offsetLeft;
-  scrollLeft = carouselN.scrollLeft;
-});
+// carouselN.addEventListener('touchstart', (e) => {
+//   isMouseDown = true;
+//   startX = e.touches[0].clientX - carouselN.offsetLeft;
+//   scrollLeft = carouselN.scrollLeft;
+// });
 
-carouselN.addEventListener('touchmove', (e) => {
-  if (!isMouseDown) return;
-  e.preventDefault();
-  const x = e.touches[0].clientX - carouselN.offsetLeft;
-  const walk = (x - startX) * 1.5;
-  carouselN.scrollLeft = scrollLeft - walk;
-});
+// carouselN.addEventListener('touchmove', (e) => {
+//   if (!isMouseDown) return;
+//   e.preventDefault();
+//   const x = e.touches[0].clientX - carouselN.offsetLeft;
+//   const walk = (x - startX) * 1.5;
+//   carouselN.scrollLeft = scrollLeft - walk;
+// });
 
-carouselN.addEventListener('touchend', () => {
-  isMouseDown = false;
-  currentIndex = Math.round(carouselN.scrollLeft / carouselItems[0].offsetWidth);
-  moveSlideToStartN(currentIndex);
+// carouselN.addEventListener('touchend', () => {
+//   isMouseDown = false;
+//   currentIndex = Math.round(carouselN.scrollLeft / carouselItems[0].offsetWidth);
+//   moveSlideToStartN(currentIndex);
  
-});
+// });
 
 ////
 
@@ -2364,26 +2364,26 @@ carouselI.addEventListener('mouseleave', () => {
  
 });
 
-carouselI.addEventListener('touchstart', (e) => {
-  isMouseDown = true;
-  startX = e.touches[0].clientX - carouselI.offsetLeft;
-  scrollLeft = carouselI.scrollLeft;
-});
+// carouselI.addEventListener('touchstart', (e) => {
+//   isMouseDown = true;
+//   startX = e.touches[0].clientX - carouselI.offsetLeft;
+//   scrollLeft = carouselI.scrollLeft;
+// });
 
-carouselI.addEventListener('touchmove', (e) => {
-  if (!isMouseDown) return;
-  e.preventDefault();
-  const x = e.touches[0].clientX - carouselI.offsetLeft;
-  const walk = (x - startX) * 1.5;
-  carouselI.scrollLeft = scrollLeft - walk;
-});
+// carouselI.addEventListener('touchmove', (e) => {
+//   if (!isMouseDown) return;
+//   e.preventDefault();
+//   const x = e.touches[0].clientX - carouselI.offsetLeft;
+//   const walk = (x - startX) * 1.5;
+//   carouselI.scrollLeft = scrollLeft - walk;
+// });
 
-carouselI.addEventListener('touchend', () => {
-  isMouseDown = false;
-  currentIndex = Math.round(carouselI.scrollLeft / carouselItems[0].offsetWidth);
-  moveSlideToStartI(currentIndex);
+// carouselI.addEventListener('touchend', () => {
+//   isMouseDown = false;
+//   currentIndex = Math.round(carouselI.scrollLeft / carouselItems[0].offsetWidth);
+//   moveSlideToStartI(currentIndex);
  
-});
+// });
 
 ////
 
@@ -2442,26 +2442,26 @@ carouselM.addEventListener('mouseleave', () => {
  
 });
 
-carouselM.addEventListener('touchstart', (e) => {
-  isMouseDown = true;
-  startX = e.touches[0].clientX - carouselM.offsetLeft;
-  scrollLeft = carouselM.scrollLeft;
-});
+// carouselM.addEventListener('touchstart', (e) => {
+//   isMouseDown = true;
+//   startX = e.touches[0].clientX - carouselM.offsetLeft;
+//   scrollLeft = carouselM.scrollLeft;
+// });
 
-carouselM.addEventListener('touchmove', (e) => {
-  if (!isMouseDown) return;
-  e.preventDefault();
-  const x = e.touches[0].clientX - carouselM.offsetLeft;
-  const walk = (x - startX) * 1.5;
-  carouselM.scrollLeft = scrollLeft - walk;
-});
+// carouselM.addEventListener('touchmove', (e) => {
+//   if (!isMouseDown) return;
+//   e.preventDefault();
+//   const x = e.touches[0].clientX - carouselM.offsetLeft;
+//   const walk = (x - startX) * 1.5;
+//   carouselM.scrollLeft = scrollLeft - walk;
+// });
 
-carouselM.addEventListener('touchend', () => {
-  isMouseDown = false;
-  currentIndex = Math.round(carouselM.scrollLeft / carouselItems[0].offsetWidth);
-  moveSlideToStartM(currentIndex);
+// carouselM.addEventListener('touchend', () => {
+//   isMouseDown = false;
+//   currentIndex = Math.round(carouselM.scrollLeft / carouselItems[0].offsetWidth);
+//   moveSlideToStartM(currentIndex);
  
-});
+// });
 
 
 </script>
