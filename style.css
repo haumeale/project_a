@@ -1083,6 +1083,11 @@ section a {
     border-radius: 5px;
     gap: 30px;
     transition: all 0.3s;
+    height: 100%;
+    /* padding: 15px; */
+    box-sizing: border-box;
+    vertical-align: top;
+    padding-right: 30px;
 }
 
 .card_info-message:hover{
@@ -1099,6 +1104,9 @@ section a {
     gap: 30px;
     margin-bottom: 18px;
     /* overflow-x: hidden; */
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    justify-content: space-between;
 }
 
 .info_message p {
@@ -1507,10 +1515,12 @@ footer a:hover{
   .news_prew{
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     list-style: none;
     padding: 0;
     z-index: 1;
+    transition: transform 0.5s ease-in-out;
+    
   }
 
   .menu_mobile{
@@ -2005,6 +2015,86 @@ padding-right: 30px;
     font-size: 12px;
   }
 
+  .prev-btn-i, .next-btn-i {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    padding: 14px 15px 10px 15px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 4px;
+    visibility: hidden;
+    transition: all 0.3s;
+    border: 1px solid #3333331A;
+  }
+  
+  .prev-btn-i {
+    left: 20px;
+  }
+
+  .prev-btn-i:hover path{
+    stroke: #365EDC;
+  }
+  
+  .next-btn-i {
+    right: 20px;
+  }
+
+  .next-btn-i:hover path{
+    stroke: #365EDC;
+  }
+
+  .carousel-conteiner-i {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-x: hidden;
+    /* white-space: nowrap; */
+    touch-action: pan-y;
+  }
+
+  .prev-btn-m, .next-btn-m {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    padding: 14px 15px 10px 15px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 4px;
+    visibility: hidden;
+    transition: all 0.3s;
+    border: 1px solid #3333331A;
+  }
+  
+  .prev-btn-m {
+    left: 20px;
+  }
+
+  .prev-btn-m:hover path{
+    stroke: #365EDC;
+  }
+  
+  .next-btn-m {
+    right: 20px;
+  }
+
+  .next-btn-m:hover path{
+    stroke: #365EDC;
+  }
+
+  .carousel-container-m {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-x: hidden;
+    /* white-space: nowrap; */
+    touch-action: pan-y;
+  }
+
 @media (max-width: 1550px) {
     .header_logo-img {
         margin-inline-end: 10px;
@@ -2017,6 +2107,12 @@ padding-right: 30px;
     .prev-btn-n, .next-btn-n{
         visibility: visible;
     }
+
+    .prev-btn-m, .next-btn-m{
+        visibility: visible;
+    }
+
+   
 }
 
 
@@ -2126,6 +2222,10 @@ padding-right: 30px;
   }
 
 @media (max-width: 991.99px){
+
+    .prev-btn-i, .next-btn-i{
+        visibility: visible;
+    }
     .menu_hidden{
         display: block;
     }
@@ -2455,10 +2555,6 @@ footer{
 
 .info_footer{
     display: block;
-}
-
-.info_message{
-    overflow: hidden;
 }
 
 .info_detail{

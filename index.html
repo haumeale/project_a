@@ -1250,6 +1250,9 @@
                 <a href="#" class="arrow_news">Все сообщения</a>
 
             </div>
+        </div>
+        <div class="carousel-conteiner-i">
+            <div class="container">
             <div class="info_message">
                 <a href="">
                 <div class="card_info-message">
@@ -1289,6 +1292,31 @@
             </a>
 
             </div>
+        </div>
+            <button class="prev-btn-i"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_257_3850)">
+                <path d="M6 1L1 6L6 11" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_257_3850">
+                <rect width="7" height="12" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                
+                </button>
+            <button class="next-btn-i"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_257_3854)">
+                <path d="M1 1L6 6L1 11" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_257_3854">
+                <rect width="7" height="12" fill="white" transform="matrix(-1 0 0 1 7 0)"/>
+                </clipPath>
+                </defs>
+                </svg>
+                
+                </button>
 
         </div>
     </section>
@@ -1298,8 +1326,10 @@
                 <h2>События и мероприятия</h2>
                 <a href="#" class="arrow_news">Все события</a>
                 
-
             </div>
+        </div>
+        <div class="carousel-container-m">
+            <div class="container">
             <div class="news_prew">
             <a href="#">
                 <div class="card_event">
@@ -1357,8 +1387,35 @@
                 </div>
             </a>
             </div>
+        </div>
+        <button class="prev-btn-m"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_257_3850)">
+            <path d="M6 1L1 6L6 11" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_257_3850">
+            <rect width="7" height="12" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+            </button>
+        <button class="next-btn-m"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_257_3854)">
+            <path d="M1 1L6 6L1 11" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_257_3854">
+            <rect width="7" height="12" fill="white" transform="matrix(-1 0 0 1 7 0)"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+            </button>
+
 
         </div>
+        
     </section>
     <section>
         
@@ -2176,12 +2233,6 @@ const carouselN = document.querySelector('.carousel-n');
 const prevBtnN = document.querySelector('.prev-btn-n');
 const nextBtnN = document.querySelector('.next-btn-n');
 const carouselItemsN = document.querySelectorAll('.carousel-item-n');
-const indicatorsN = document.querySelectorAll('.indicator-n');
-
-// let currentIndex = 0;
-// let isMouseDown = false;
-// let startX;
-// let scrollLeft;
 
 function goToSlideN(index) {
   carouselN.style.transform = `translateX(-${index * 100}%)`;
@@ -2192,35 +2243,18 @@ function moveSlideToStartN(index) {
   carouselN.style.transform = `translateX(${-(index * itemWidth)}px)`;
 }
 
-function updateIndicatorsN() {
-  indicatorsN.forEach((indicator, i) => {
-    if (i === currentIndex) {
-      indicator.classList.add('active');
-    } else {
-      indicator.classList.remove('active');
-    }
-  });
-}
-
 prevBtnN.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + carouselItemsN.length) % carouselItemsN.length;
   moveSlideToStartN(currentIndex);
-  updateIndicatorsN();
+ 
 });
 
 nextBtnN.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % carouselItemsN.length;
   moveSlideToStartN(currentIndex);
-  updateIndicatorsN();
+ 
 });
 
-indicatorsN.forEach((indicator, i) => {
-  indicator.addEventListener('click', () => {
-    currentIndex = i;
-    moveSlideToStartN(currentIndex);
-    updateIndicatorsN();
-  });
-});
 
 carouselN.addEventListener('mousedown', (e) => {
   isMouseDown = true;
@@ -2240,14 +2274,14 @@ carouselN.addEventListener('mouseup', () => {
   isMouseDown = false; 
   currentIndex = Math.round(carouselN.scrollLeft / carouselItems[0].offsetWidth);
   moveSlideToStartN(currentIndex);
-  updateIndicatorsN();
+ 
 });
 
 carouselN.addEventListener('mouseleave', () => {
   isMouseDown = false;
   currentIndex = Math.round(carouselN.scrollLeft / carouselItems[0].offsetWidth);
   moveSlideToStartN(currentIndex);
-  updateIndicatorsN();
+ 
 });
 
 carouselN.addEventListener('touchstart', (e) => {
@@ -2268,8 +2302,165 @@ carouselN.addEventListener('touchend', () => {
   isMouseDown = false;
   currentIndex = Math.round(carouselN.scrollLeft / carouselItems[0].offsetWidth);
   moveSlideToStartN(currentIndex);
-  updateIndicatorsN();
+ 
 });
+
+////
+
+const carouselI = document.querySelector('.info_message');
+const prevBtnI = document.querySelector('.prev-btn-i');
+const nextBtnI = document.querySelector('.next-btn-i');
+const carouselItemsI = document.querySelectorAll('.card_info-message');
+
+function goToSlideI(index) {
+  carouselI.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function moveSlideToStartI(index) {
+  const itemWidth = carouselItems[0].offsetWidth;
+  carouselI.style.transform = `translateX(${-(index * itemWidth)}px)`;
+}
+
+prevBtnI.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + carouselItemsI.length) % carouselItemsI.length;
+  moveSlideToStartI(currentIndex);
+ 
+});
+
+nextBtnI.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % carouselItemsI.length;
+  moveSlideToStartI(currentIndex);
+ 
+});
+
+
+carouselI.addEventListener('mousedown', (e) => {
+  isMouseDown = true;
+  startX = e.pageX - carouselI.offsetLeft;
+  scrollLeft = carouselI.scrollLeft;
+});
+
+carouselI.addEventListener('mousemove', (e) => {
+  if (!isMouseDown) return;
+  e.preventDefault();
+  const x = e.pageX - carouselI.offsetLeft;
+  const walk = (x - startX) * 1.5;
+  carouselI.scrollLeft = scrollLeft - walk;
+});
+
+carouselI.addEventListener('mouseup', () => {
+  isMouseDown = false; 
+  currentIndex = Math.round(carouselI.scrollLeft / carouselItems[0].offsetWidth);
+  moveSlideToStartI(currentIndex);
+ 
+});
+
+carouselI.addEventListener('mouseleave', () => {
+  isMouseDown = false;
+  currentIndex = Math.round(carouselI.scrollLeft / carouselItems[0].offsetWidth);
+  moveSlideToStartI(currentIndex);
+ 
+});
+
+carouselI.addEventListener('touchstart', (e) => {
+  isMouseDown = true;
+  startX = e.touches[0].clientX - carouselI.offsetLeft;
+  scrollLeft = carouselI.scrollLeft;
+});
+
+carouselI.addEventListener('touchmove', (e) => {
+  if (!isMouseDown) return;
+  e.preventDefault();
+  const x = e.touches[0].clientX - carouselI.offsetLeft;
+  const walk = (x - startX) * 1.5;
+  carouselI.scrollLeft = scrollLeft - walk;
+});
+
+carouselI.addEventListener('touchend', () => {
+  isMouseDown = false;
+  currentIndex = Math.round(carouselI.scrollLeft / carouselItems[0].offsetWidth);
+  moveSlideToStartI(currentIndex);
+ 
+});
+
+////
+
+const carouselM = document.querySelector('.news_prew');
+const prevBtnM = document.querySelector('.prev-btn-m');
+const nextBtnM = document.querySelector('.next-btn-m');
+const carouselItemsM = document.querySelectorAll('.card_event');
+
+function goToSlideM(index) {
+  carouselM.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function moveSlideToStartM(index) {
+  const itemWidth = carouselItems[0].offsetWidth;
+  carouselM.style.transform = `translateX(${-(index * itemWidth)}px)`;
+}
+
+prevBtnM.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + carouselItemsM.length) % carouselItemsM.length;
+  moveSlideToStartM(currentIndex);
+ 
+});
+
+nextBtnM.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % carouselItemsM.length;
+  moveSlideToStartM(currentIndex);
+ 
+});
+
+
+carouselM.addEventListener('mousedown', (e) => {
+  isMouseDown = true;
+  startX = e.pageX - carouselM.offsetLeft;
+  scrollLeft = carouselM.scrollLeft;
+});
+
+carouselM.addEventListener('mousemove', (e) => {
+  if (!isMouseDown) return;
+  e.preventDefault();
+  const x = e.pageX - carouselM.offsetLeft;
+  const walk = (x - startX) * 1.5;
+  carouselM.scrollLeft = scrollLeft - walk;
+});
+
+carouselM.addEventListener('mouseup', () => {
+  isMouseDown = false; 
+  currentIndex = Math.round(carouselM.scrollLeft / carouselItems[0].offsetWidth);
+  moveSlideToStartM(currentIndex);
+ 
+});
+
+carouselM.addEventListener('mouseleave', () => {
+  isMouseDown = false;
+  currentIndex = Math.round(carouselM.scrollLeft / carouselItems[0].offsetWidth);
+  moveSlideToStartM(currentIndex);
+ 
+});
+
+carouselM.addEventListener('touchstart', (e) => {
+  isMouseDown = true;
+  startX = e.touches[0].clientX - carouselM.offsetLeft;
+  scrollLeft = carouselM.scrollLeft;
+});
+
+carouselM.addEventListener('touchmove', (e) => {
+  if (!isMouseDown) return;
+  e.preventDefault();
+  const x = e.touches[0].clientX - carouselM.offsetLeft;
+  const walk = (x - startX) * 1.5;
+  carouselM.scrollLeft = scrollLeft - walk;
+});
+
+carouselM.addEventListener('touchend', () => {
+  isMouseDown = false;
+  currentIndex = Math.round(carouselM.scrollLeft / carouselItems[0].offsetWidth);
+  moveSlideToStartM(currentIndex);
+ 
+});
+
 
 </script>
 </body>
