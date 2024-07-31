@@ -1931,6 +1931,80 @@ padding-right: 30px;
   }
   
 
+  .prev-btn-n, .next-btn-n {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    padding: 14px 15px 10px 15px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 4px;
+    visibility: hidden;
+    transition: all 0.3s;
+    border: 1px solid #3333331A;
+  }
+  
+  .prev-btn-n {
+    left: 20px;
+  }
+
+  .prev-btn-n:hover path{
+    stroke: #365EDC;
+  }
+  
+  .next-btn-n {
+    right: 20px;
+  }
+
+  .next-btn-n:hover path{
+    stroke: #365EDC;
+  }
+  
+  .carousel-indicators-n {
+    position: absolute;
+   margin-top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+  }
+  
+  .carousel-container-n {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-x: hidden;
+    white-space: nowrap;
+    touch-action: pan-y;
+    /* background-color: #F4F4F4; */
+  }
+  
+  .carousel-n {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    justify-content: space-between;
+  }
+  
+  .carousel-item-n {
+    display: inline-block;
+    width: max-content;
+    height: 100%;
+    font-size: 24px;
+    /*padding: 15px;*/
+    box-sizing: border-box;
+    vertical-align: top;
+    padding-right: 30px;
+  }
+
+  .cadr_news-text small{
+    font-size: 12px;
+  }
+
 @media (max-width: 1550px) {
     .header_logo-img {
         margin-inline-end: 10px;
@@ -1938,6 +2012,10 @@ padding-right: 30px;
 
     .navigation {
         width: 100%;
+    }
+
+    .prev-btn-n, .next-btn-n{
+        visibility: visible;
     }
 }
 
